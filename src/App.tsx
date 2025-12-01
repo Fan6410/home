@@ -32,7 +32,7 @@ function AnimatedRoutes() {
 
 export default function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen w-full relative">
         {/* 全局噪点与扫描线覆盖 */}
         <div className="fixed inset-0 opacity-40 bg-noise pointer-events-none z-50"></div>
